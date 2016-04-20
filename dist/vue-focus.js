@@ -16,7 +16,7 @@
 
       this.focus = function() {
         if (self.bound === true) {
-          self.el.focus();
+          self.el.select();
         }
       };
 
@@ -50,7 +50,7 @@
 
       this.focus = function() {
         if (self.bound === true) {
-          self.el.focus();
+          self.el.select();
         }
       };
 
@@ -103,7 +103,7 @@
 
       Vue__default.nextTick(function() {
         if (self.bound === true) {
-          self.el.focus();
+          self.el.select();
         }
       });
     },
