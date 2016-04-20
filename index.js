@@ -15,7 +15,7 @@ export var focus = {
 
     this.focus = function() {
       if (self.bound === true) {
-        self.el.focus();
+        self.el.select();
       }
     };
 
@@ -49,7 +49,7 @@ export var focusModel = {
 
     this.focus = function() {
       if (self.bound === true) {
-        self.el.focus();
+        self.el.select();
       }
     };
 
@@ -102,7 +102,7 @@ export var focusAuto = {
 
     Vue.nextTick(function() {
       if (self.bound === true) {
-        self.el.focus();
+        self.el.select();
       }
     });
   },
